@@ -1,0 +1,21 @@
+{
+  "name": "repro",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./client": "./dist/client/index.js",
+    "./server": "./dist/server/index.js"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist node_modules package-lock.json examples/basic/.next examples/basic/node_modules examples/basic/package-lock.json",
+    "dev": "npm install && tsc && cd examples/basic && npm install && npm run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.22",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "next": ">=10"
+  }
+}
