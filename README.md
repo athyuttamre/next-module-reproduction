@@ -3,6 +3,8 @@
 A minimal reproduction of a module resolution error I found with Next.js which
 shows up when your package's directory is itself named `next`.
 
+Reported here: https://github.com/vercel/next.js/issues/34000
+
 # Steps to reproduce
 
 We have to identical packages in this repository, one in a directory named `foo`
