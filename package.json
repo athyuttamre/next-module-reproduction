@@ -25,7 +25,6 @@
   "scripts": {
     "dev": "npm install && npm run build && cd examples/basic && npm install && npm run dev",
     "build": "tsc",
-    "prepack": "npm run clean && npm install && tsc -p tsconfig.build.json",
     "clean": "rm -rf dist node_modules package-lock.json examples/basic/.next examples/basic/node_modules examples/basic/package-lock.json"
   },
   "dependencies": {
