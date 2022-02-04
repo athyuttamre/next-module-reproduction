@@ -1,6 +1,6 @@
-import { Authik } from "@authik/next/server";
+import { Server } from "repro/server";
 
 export default function handler(_req, res) {
-  Authik();
+  Server();
   res.json({ hello: "world" });
 }

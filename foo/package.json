@@ -1,5 +1,5 @@
 {
-  "name": "@authik/next",
+  "name": "repro",
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
@@ -8,9 +8,8 @@
   },
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "npm install && npm run build && cd examples/basic && npm install && npm run dev",
-    "build": "tsc",
-    "clean": "rm -rf dist node_modules package-lock.json examples/basic/.next examples/basic/node_modules examples/basic/package-lock.json"
+    "clean": "rm -rf dist node_modules package-lock.json examples/basic/.next examples/basic/node_modules examples/basic/package-lock.json",
+    "dev": "npm install && tsc && cd examples/basic && npm install && npm run dev"
   },
   "devDependencies": {
     "@types/node": "^16.11.22",
