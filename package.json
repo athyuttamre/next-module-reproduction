@@ -1,20 +1,5 @@
 {
   "name": "@authik/next",
-  "version": "0.0.1",
-  "description": "Authik SDK for Next.js",
-  "keywords": [
-    "authik",
-    "authentication",
-    "next.js",
-    "vercel",
-    "react",
-    "typescript"
-  ],
-  "author": "Authik (https://authik.com)",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
